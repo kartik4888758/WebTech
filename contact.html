@@ -11,19 +11,51 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<div id="main">
-
-    <div id="page1">
+<body>
+    <div id="main">
+        <!-- Navigation Bar -->
         <nav>
-            <img src="logo.png"
-                alt="">
+            <img src="logo.png" alt="ADYPU Logo" id="logo">
             <div id="nav-part2">
                 <h4><a href="home.html" onclick="homebutton()">Home</a></h4>
-                    <h4><a href="about.html" onclick="aboutbutton()">About</a></h4>
-                    <h4><a href="academics.html" onclick="academicsbutton()">Academics</a></h4>
-                    <h4><a href="placements.html" onclick="placementsbutton()">Placements</a></h4>
-                    <h4><a href="gallery.html" onclick="gallerybutton()"">Gallery</a></h4>
-                    <h4><a href="contact.html" onclick="contactbutton()"">Contact us</a></h4>
+                <h4><a href="about.html" onclick="aboutbutton()">About</a></h4>
+                <h4><a href="placements.html" onclick="placementsbutton()">Placements</a></h4>
+                <h4><a href="contact.html" onclick="contactbutton()">Contact Us</a></h4>
             </div>
             <h3>Menu</h3>
         </nav>
+
+        <!-- Contact Section -->
+        <div id="contact-section">
+            <h1>Contact Us</h1>
+            <div id="contact-content">
+                <!-- Contact Details -->
+                <div id="contact-details">
+                    <h3>Get in Touch</h3>
+                    <p><strong>Address:</strong> Ajeenkya DY Patil University, Pune, Maharashtra, India</p>
+                    <p><strong>Email:</strong> <a href="mailto:contact@adypu.edu">contact@adypu.edu</a></p>
+                    <p><strong>Phone:</strong> <a href="tel:+911234567890">+91 12345 67890</a></p>
+                </div>
+
+                <!-- Contact Form -->
+                <div id="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <form action="submit_form.php" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Your email" required>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
