@@ -4,37 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADYPU</title>
+    <title>ADYPU - About Us</title>
     <link rel="shortcut icon" href="adypu.webp" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
-<div id="main">
+<body>
+    <div id="main">
+        <div id="page1">
+            <nav>
+                <img src="logo.png" alt="ADYPU Logo">
+                <div id="nav-part2">
+                    <h4><a href="home.html">Home</a></h4>
+                    <h4><a href="about.html">About</a></h4>
+                    <h4><a href="placements.html">Placements</a></h4>
+                    <h4><a href="contact.html">Contact us</a></h4>
+                </div>
+                <h3>Menu</h3>
+            </nav>
 
-    <div id="page1">
-        <nav>
-            <img src="logo.png"
-                alt="">
-            <div id="nav-part2">
-                <h4><a href="home.html" onclick="homebutton()">Home</a></h4>
-                    <h4><a href="about.html" onclick="aboutbutton()">About</a></h4>
-                   
-                    <h4><a href="placements.html" onclick="placementsbutton()">Placements</a></h4>
-                
-                    <h4><a href="contact.html" onclick="contactbutton()">Contact us</a></h4>
-            </div>
-            <h3>Menu</h3>
-        </nav>
-        <div id="center">
-            <div id="left">
-                <h3>This is the about section of nav bar.</h3>
-            </div>
-            <div id="bottom-part2">
-                <img src="Campus.png" width="600" height="300"
-                    alt="">
-            
-                
-                    
+            <div id="about-us-section">
+                <div class="about-intro">
+                    <h2>About Ajeenkya DY Patil University (ADYPU)</h2>
+                    <p>
+                        Ajeenkya DY Patil University is committed to fostering an environment of innovation, learning, and excellence.
+                        Explore a campus that combines world-class infrastructure with a vision to empower students to achieve their full potential.
+                    </p>
+                </div>
 
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="campus.png" alt="ADYPU Campus">
+                    </div>
+                    <div class="about-text">
+                        <h3>Our Mission</h3>
+                        <p>
+                            Our mission is to transform the lives of students by providing cutting-edge education,
+                            fostering creativity, and shaping future leaders in various fields.
+                        </p>
+
+                        <h3>Why Choose Us?</h3>
+                        <ul>
+                            <li>World-class facilities and infrastructure.</li>
+                            <li>A faculty composed of industry experts and scholars.</li>
+                            <li>Hands-on learning and innovation-driven pedagogy.</li>
+                            <li>Extensive placement opportunities with top-tier companies.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="gallery">
+                    <h3>Our Campus</h3>
+                    <div class="gallery-images">
+                        <img src="campus1.jpg" alt="Campus View 1">
+                        <img src="campus2.jpg" alt="Campus View 2">
+                        <img src="campus3.jpg" alt="Campus View 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

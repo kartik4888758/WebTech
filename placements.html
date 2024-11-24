@@ -4,26 +4,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADYPU</title>
+    <title>ADYPU - Placements</title>
     <link rel="shortcut icon" href="adypu.webp" type="image/x-icon">
+    <!-- External CSS Libraries -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<div id="main">
+<body>
+    <div id="main">
+        <div id="page1">
+            <!-- Navigation Bar -->
+            <nav>
+                <img src="logo.png" alt="ADYPU Logo" width="100">
+                <div id="nav-part2">
+                    <h4><a href="home.html" onclick="homebutton()">Home</a></h4>
+                    <h4><a href="about.html" onclick="aboutbutton()">About</a></h4>
+                    <h4><a href="placements.html" onclick="placementsbutton()">Placements</a></h4>
+                    <h4><a href="contact.html" onclick="contactbutton()">Contact us</a></h4>
+                </div>
+                <h3>Menu</h3>
+            </nav>
 
-    <div id="page1">
-        <nav>
-            <img src="logo.png"
-                alt="">
-            <div id="nav-part2">
-                <h4><a href="home.html" onclick="homebutton()">Home</a></h4>
-                <h4><a href="about.html" onclick="aboutbutton()">About</a></h4>
-               
-                <h4><a href="placements.html" onclick="placementsbutton()">Placements</a></h4>
-            
-                <h4><a href="contact.html" onclick="contactbutton()">Contact us</a></h4>
+            <!-- Placements Section -->
+            <div id="placements-section" data-scroll-container>
+                <div class="intro" data-scroll>
+                    <h2>Placements at ADYPU</h2>
+                    <p>
+                        Ajeenkya DY Patil University collaborates with top-tier organizations globally to ensure students
+                        achieve outstanding professional outcomes. Our placement cell provides comprehensive guidance
+                        and training to maximize career opportunities.
+                    </p>
+                </div>
+
+                <!-- Placement Highlights -->
+                <div class="placement-highlights" data-scroll>
+                    <h3>Placement Highlights</h3>
+                    <ul>
+                        <li>98% placement success rate across programs.</li>
+                        <li>Collaboration with 200+ global hiring partners.</li>
+                        <li>Highest package: ₹20 LPA | Average package: ₹6 LPA.</li>
+                        <li>Pre-placement training and mock interviews.</li>
+                    </ul>
+                </div>
+
+                <!-- Success Stories Section -->
+                <div class="success-stories" data-scroll>
+                    <h3>Success Stories</h3>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="student1.jpg" alt="Student Success Story" width="200">
+                                <p><strong>Riya Sharma</strong> <br> Hired at Amazon (₹15 LPA).</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="student2.jpg" alt="Student Success Story" width="200">
+                                <p><strong>Arjun Mehta</strong> <br> Hired at Deloitte (₹10 LPA).</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="student3.jpg" alt="Student Success Story" width="200">
+                                <p><strong>Priya Singh</strong> <br> Hired at TCS (₹12 LPA).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Placement Partners Section -->
+                <div class="placement-partners" data-scroll>
+                    <h3>Our Placement Partners</h3>
+                    <div class="partner-logos">
+                        <img src="partner1.png" alt="Partner 1" width="150">
+                        <img src="partner2.png" alt="Partner 2" width="150">
+                        <img src="partner3.png" alt="Partner 3" width="150">
+                        <img src="partner4.png" alt="Partner 4" width="150">
+                    </div>
+                </div>
             </div>
-            <h3>Menu</h3>
-        </nav>
+        </div>
+    </div>
+
+    <!-- External JS Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // Locomotive Scroll Initialization
+        const scroll = new LocomotiveScroll({
+            el: document.querySelector("[data-scroll-container]"),
+            smooth: true
+        });
+
+        // Swiper Slider Initialization
+        const swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>
